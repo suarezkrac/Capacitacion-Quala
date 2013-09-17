@@ -24,6 +24,9 @@
 		46FD807A17E9066D002280E2 /* callout.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FD807617E9066D002280E2 /* callout.png */; };
 		46FD807B17E9066D002280E2 /* callout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FD807717E9066D002280E2 /* callout@2x.png */; };
 		46FD807C17E9066D002280E2 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FD807817E9066D002280E2 /* pin@2x.png */; };
+		46FD807E17E90A9B002280E2 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46FD807D17E90A9B002280E2 /* View.xib */; };
+		46FD808117E90C63002280E2 /* CalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD808017E90C63002280E2 /* CalloutView.m */; };
+		46FD808417E90E4F002280E2 /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD808317E90E4F002280E2 /* myAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,10 +48,15 @@
 		46FD804217E905A8002280E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		46FD804917E905BF002280E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FD804B17E905C5002280E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		46FD807517E9066D002280E2 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
-		46FD807617E9066D002280E2 /* callout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callout.png; sourceTree = "<group>"; };
-		46FD807717E9066D002280E2 /* callout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout@2x.png"; sourceTree = "<group>"; };
-		46FD807817E9066D002280E2 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
+		46FD807517E9066D002280E2 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin.png; path = ../pin.png; sourceTree = "<group>"; };
+		46FD807617E9066D002280E2 /* callout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = callout.png; path = ../callout.png; sourceTree = "<group>"; };
+		46FD807717E9066D002280E2 /* callout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "callout@2x.png"; path = "../callout@2x.png"; sourceTree = "<group>"; };
+		46FD807817E9066D002280E2 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin@2x.png"; path = "../pin@2x.png"; sourceTree = "<group>"; };
+		46FD807D17E90A9B002280E2 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = ../View.xib; sourceTree = "<group>"; };
+		46FD807F17E90C63002280E2 /* CalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalloutView.h; path = ../CalloutView.h; sourceTree = "<group>"; };
+		46FD808017E90C63002280E2 /* CalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalloutView.m; path = ../CalloutView.m; sourceTree = "<group>"; };
+		46FD808217E90E4F002280E2 /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myAnnotation.h; path = ../myAnnotation.h; sourceTree = "<group>"; };
+		46FD808317E90E4F002280E2 /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myAnnotation.m; path = ../myAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +78,6 @@
 		46FD801A17E905A8002280E2 = {
 			isa = PBXGroup;
 			children = (
-				46FD807517E9066D002280E2 /* pin.png */,
-				46FD807617E9066D002280E2 /* callout.png */,
-				46FD807717E9066D002280E2 /* callout@2x.png */,
-				46FD807817E9066D002280E2 /* pin@2x.png */,
-				46FD804B17E905C5002280E2 /* CoreLocation.framework */,
-				46FD804917E905BF002280E2 /* MapKit.framework */,
 				46FD802C17E905A8002280E2 /* MapView */,
 				46FD802517E905A8002280E2 /* Frameworks */,
 				46FD802417E905A8002280E2 /* Products */,
@@ -93,6 +95,8 @@
 		46FD802517E905A8002280E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46FD804B17E905C5002280E2 /* CoreLocation.framework */,
+				46FD804917E905BF002280E2 /* MapKit.framework */,
 				46FD802617E905A8002280E2 /* UIKit.framework */,
 				46FD802817E905A8002280E2 /* Foundation.framework */,
 				46FD802A17E905A8002280E2 /* CoreGraphics.framework */,
@@ -103,6 +107,15 @@
 		46FD802C17E905A8002280E2 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				46FD808217E90E4F002280E2 /* myAnnotation.h */,
+				46FD808317E90E4F002280E2 /* myAnnotation.m */,
+				46FD807D17E90A9B002280E2 /* View.xib */,
+				46FD807517E9066D002280E2 /* pin.png */,
+				46FD807617E9066D002280E2 /* callout.png */,
+				46FD807717E9066D002280E2 /* callout@2x.png */,
+				46FD807817E9066D002280E2 /* pin@2x.png */,
+				46FD807F17E90C63002280E2 /* CalloutView.h */,
+				46FD808017E90C63002280E2 /* CalloutView.m */,
 				46FD803517E905A8002280E2 /* AppDelegate.h */,
 				46FD803617E905A8002280E2 /* AppDelegate.m */,
 				46FD803E17E905A8002280E2 /* MainStoryboard.storyboard */,
@@ -187,6 +200,7 @@
 				46FD807A17E9066D002280E2 /* callout.png in Resources */,
 				46FD807B17E9066D002280E2 /* callout@2x.png in Resources */,
 				46FD807C17E9066D002280E2 /* pin@2x.png in Resources */,
+				46FD807E17E90A9B002280E2 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +214,8 @@
 				46FD803317E905A8002280E2 /* main.m in Sources */,
 				46FD803717E905A8002280E2 /* AppDelegate.m in Sources */,
 				46FD804317E905A8002280E2 /* ViewController.m in Sources */,
+				46FD808117E90C63002280E2 /* CalloutView.m in Sources */,
+				46FD808417E90E4F002280E2 /* myAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
