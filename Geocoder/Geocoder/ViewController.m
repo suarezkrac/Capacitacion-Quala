@@ -81,14 +81,11 @@
     [self performSelector:@selector(delayedReverseGeocodeLocation) withObject:nil afterDelay:0.3];
     
 }
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (IBAction)submitTapped:(id)sender {
     [self updatePlaceDictionary];
     [self updateMaps];

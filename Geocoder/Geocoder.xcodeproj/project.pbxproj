@@ -20,7 +20,7 @@
 		4694FC0717EA555A00E17FF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4694FC0617EA555A00E17FF4 /* ViewController.m */; };
 		4694FC0E17EA557600E17FF4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4694FC0D17EA557600E17FF4 /* MapKit.framework */; };
 		4694FC1017EA557F00E17FF4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4694FC0F17EA557F00E17FF4 /* CoreLocation.framework */; };
-		4694FC1217EA56F500E17FF4 /* targeting-your-personal-brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 4694FC1117EA56F500E17FF4 /* targeting-your-personal-brand.png */; };
+		4694FC1417EA703400E17FF4 /* targeting-your-personal-brand.png in Resources */ = {isa = PBXBuildFile; fileRef = 4694FC1317EA703400E17FF4 /* targeting-your-personal-brand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,7 @@
 		4694FC0617EA555A00E17FF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4694FC0D17EA557600E17FF4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4694FC0F17EA557F00E17FF4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		4694FC1117EA56F500E17FF4 /* targeting-your-personal-brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "targeting-your-personal-brand.png"; path = "../../../../Desktop/targeting-your-personal-brand.png"; sourceTree = "<group>"; };
+		4694FC1317EA703400E17FF4 /* targeting-your-personal-brand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "targeting-your-personal-brand.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		4694FBDE17EA555A00E17FF4 = {
 			isa = PBXGroup;
 			children = (
-				4694FC1117EA56F500E17FF4 /* targeting-your-personal-brand.png */,
+				4694FC1317EA703400E17FF4 /* targeting-your-personal-brand.png */,
 				4694FC0F17EA557F00E17FF4 /* CoreLocation.framework */,
 				4694FC0D17EA557600E17FF4 /* MapKit.framework */,
 				4694FBF017EA555A00E17FF4 /* Geocoder */,
@@ -174,7 +174,7 @@
 				4694FBFF17EA555A00E17FF4 /* Default@2x.png in Resources */,
 				4694FC0117EA555A00E17FF4 /* Default-568h@2x.png in Resources */,
 				4694FC0417EA555A00E17FF4 /* MainStoryboard.storyboard in Resources */,
-				4694FC1217EA56F500E17FF4 /* targeting-your-personal-brand.png in Resources */,
+				4694FC1417EA703400E17FF4 /* targeting-your-personal-brand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
