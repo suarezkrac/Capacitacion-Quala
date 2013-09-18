@@ -84,6 +84,19 @@
     <resources>
         <image name="targeting-your-personal-brand.png" width="776" height="776"/>
     </resources>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="submitTapped:"/>
+                <relationship kind="outlet" name="adressOutlet" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cityOutlet" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="stateOutlet" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="zipOutlet" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
