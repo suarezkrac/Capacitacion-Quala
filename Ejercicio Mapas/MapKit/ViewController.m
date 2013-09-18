@@ -61,6 +61,7 @@
 {
     CLLocationCoordinate2D coord = [loc coordinate];
     region = MKCoordinateRegionMakeWithDistance(coord, 250, 250);
+    
     lugar = cadena;
     imagen =  [UIImage imageNamed:lugar];
 }
