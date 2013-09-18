@@ -56,6 +56,44 @@
     [self.mapView setRegion:viewRegion animated:YES];
 }
 
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    
+    NSString * identifier = @"myAnnotation";
+    MKAnnotationView * annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+
+    if(!annotationView){
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        annotationView.image = [UIImage imageNamed:@"pin.png"];
+    }else{
+        annotationView.annotation = annotation;
+    }
+
+    return  annotationView;
+
+}
+
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    if (![view.annotation isKindOfClass:[MKUserLocation class]]) {
+        CalloutView * calloutview = (CalloutView *)[[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil] objectAtIndex:0];
+        
+        CGRect calloutViewFrame = calloutview.frame;
+        calloutViewFrame.origin = CGPointMake(-calloutViewFrame.size.width/2 +15, -calloutViewFrame.size.height);
+        calloutview.frame = calloutViewFrame;
+        
+        [calloutview.calloutLabel setText:[[view annotation] title]];
+        
+        [view addSubview:calloutview];
+    }
+}
+
+-(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view{
+    for (UIView * subview in view.subviews) {
+        [subview removeFromSuperview];
+    }
+}
 
 
 - (void)didReceiveMemoryWarning
