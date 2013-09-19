@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46FAC92517EBA9FC000F4942 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAC92417EBA9FC000F4942 /* UIKit.framework */; };
+		46FAC92717EBA9FC000F4942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAC92617EBA9FC000F4942 /* Foundation.framework */; };
+		46FAC92917EBA9FC000F4942 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAC92817EBA9FC000F4942 /* CoreGraphics.framework */; };
+		46FAC92F17EBA9FC000F4942 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46FAC92D17EBA9FC000F4942 /* InfoPlist.strings */; };
+		46FAC93117EBA9FC000F4942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FAC93017EBA9FC000F4942 /* main.m */; };
+		46FAC93517EBA9FC000F4942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FAC93417EBA9FC000F4942 /* AppDelegate.m */; };
+		46FAC93717EBA9FC000F4942 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FAC93617EBA9FC000F4942 /* Default.png */; };
+		46FAC93917EBA9FC000F4942 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FAC93817EBA9FC000F4942 /* Default@2x.png */; };
+		46FAC93B17EBA9FC000F4942 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FAC93A17EBA9FC000F4942 /* Default-568h@2x.png */; };
+		46FAC93E17EBA9FC000F4942 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FAC93C17EBA9FC000F4942 /* MainStoryboard.storyboard */; };
+		46FAC94117EBA9FC000F4942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FAC94017EBA9FC000F4942 /* ViewController.m */; };
+		46FAC94817EBAA0F000F4942 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAC94717EBAA0F000F4942 /* MapKit.framework */; };
+		46FAC94A17EBAA1D000F4942 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FAC94917EBAA1D000F4942 /* CoreLocation.framework */; };
+		46FAC94D17EBAA67000F4942 /* DisplayMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FAC94C17EBAA67000F4942 /* DisplayMap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46FAC92117EBA9FC000F4942 /* Distancia Mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distancia Mapkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FAC92417EBA9FC000F4942 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46FAC92617EBA9FC000F4942 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46FAC92817EBA9FC000F4942 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46FAC92C17EBA9FC000F4942 /* Distancia Mapkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Distancia Mapkit-Info.plist"; sourceTree = "<group>"; };
+		46FAC92E17EBA9FC000F4942 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46FAC93017EBA9FC000F4942 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46FAC93217EBA9FC000F4942 /* Distancia Mapkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Distancia Mapkit-Prefix.pch"; sourceTree = "<group>"; };
+		46FAC93317EBA9FC000F4942 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46FAC93417EBA9FC000F4942 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46FAC93617EBA9FC000F4942 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		46FAC93817EBA9FC000F4942 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		46FAC93A17EBA9FC000F4942 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		46FAC93D17EBA9FC000F4942 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		46FAC93F17EBA9FC000F4942 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46FAC94017EBA9FC000F4942 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46FAC94717EBAA0F000F4942 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46FAC94917EBAA1D000F4942 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46FAC94B17EBAA67000F4942 /* DisplayMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayMap.h; sourceTree = "<group>"; };
+		46FAC94C17EBAA67000F4942 /* DisplayMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayMap.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46FAC91E17EBA9FC000F4942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FAC94A17EBAA1D000F4942 /* CoreLocation.framework in Frameworks */,
+				46FAC94817EBAA0F000F4942 /* MapKit.framework in Frameworks */,
+				46FAC92517EBA9FC000F4942 /* UIKit.framework in Frameworks */,
+				46FAC92717EBA9FC000F4942 /* Foundation.framework in Frameworks */,
+				46FAC92917EBA9FC000F4942 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46FAC91817EBA9FC000F4942 = {
+			isa = PBXGroup;
+			children = (
+				46FAC94B17EBAA67000F4942 /* DisplayMap.h */,
+				46FAC94C17EBAA67000F4942 /* DisplayMap.m */,
+				46FAC94917EBAA1D000F4942 /* CoreLocation.framework */,
+				46FAC94717EBAA0F000F4942 /* MapKit.framework */,
+				46FAC92A17EBA9FC000F4942 /* Distancia Mapkit */,
+				46FAC92317EBA9FC000F4942 /* Frameworks */,
+				46FAC92217EBA9FC000F4942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46FAC92217EBA9FC000F4942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46FAC92117EBA9FC000F4942 /* Distancia Mapkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46FAC92317EBA9FC000F4942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46FAC92417EBA9FC000F4942 /* UIKit.framework */,
+				46FAC92617EBA9FC000F4942 /* Foundation.framework */,
+				46FAC92817EBA9FC000F4942 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46FAC92A17EBA9FC000F4942 /* Distancia Mapkit */ = {
+			isa = PBXGroup;
+			children = (
+				46FAC93317EBA9FC000F4942 /* AppDelegate.h */,
+				46FAC93417EBA9FC000F4942 /* AppDelegate.m */,
+				46FAC93C17EBA9FC000F4942 /* MainStoryboard.storyboard */,
+				46FAC93F17EBA9FC000F4942 /* ViewController.h */,
+				46FAC94017EBA9FC000F4942 /* ViewController.m */,
+				46FAC92B17EBA9FC000F4942 /* Supporting Files */,
+			);
+			path = "Distancia Mapkit";
+			sourceTree = "<group>";
+		};
+		46FAC92B17EBA9FC000F4942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46FAC92C17EBA9FC000F4942 /* Distancia Mapkit-Info.plist */,
+				46FAC92D17EBA9FC000F4942 /* InfoPlist.strings */,
+				46FAC93017EBA9FC000F4942 /* main.m */,
+				46FAC93217EBA9FC000F4942 /* Distancia Mapkit-Prefix.pch */,
+				46FAC93617EBA9FC000F4942 /* Default.png */,
+				46FAC93817EBA9FC000F4942 /* Default@2x.png */,
+				46FAC93A17EBA9FC000F4942 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46FAC92017EBA9FC000F4942 /* Distancia Mapkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46FAC94417EBA9FC000F4942 /* Build configuration list for PBXNativeTarget "Distancia Mapkit" */;
+			buildPhases = (
+				46FAC91D17EBA9FC000F4942 /* Sources */,
+				46FAC91E17EBA9FC000F4942 /* Frameworks */,
+				46FAC91F17EBA9FC000F4942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Distancia Mapkit";
+			productName = "Distancia Mapkit";
+			productReference = 46FAC92117EBA9FC000F4942 /* Distancia Mapkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46FAC91917EBA9FC000F4942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Cymetria;
+			};
+			buildConfigurationList = 46FAC91C17EBA9FC000F4942 /* Build configuration list for PBXProject "Distancia Mapkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46FAC91817EBA9FC000F4942;
+			productRefGroup = 46FAC92217EBA9FC000F4942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46FAC92017EBA9FC000F4942 /* Distancia Mapkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46FAC91F17EBA9FC000F4942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FAC92F17EBA9FC000F4942 /* InfoPlist.strings in Resources */,
+				46FAC93717EBA9FC000F4942 /* Default.png in Resources */,
+				46FAC93917EBA9FC000F4942 /* Default@2x.png in Resources */,
+				46FAC93B17EBA9FC000F4942 /* Default-568h@2x.png in Resources */,
+				46FAC93E17EBA9FC000F4942 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46FAC91D17EBA9FC000F4942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FAC93117EBA9FC000F4942 /* main.m in Sources */,
+				46FAC93517EBA9FC000F4942 /* AppDelegate.m in Sources */,
+				46FAC94117EBA9FC000F4942 /* ViewController.m in Sources */,
+				46FAC94D17EBAA67000F4942 /* DisplayMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46FAC92D17EBA9FC000F4942 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FAC92E17EBA9FC000F4942 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46FAC93C17EBA9FC000F4942 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FAC93D17EBA9FC000F4942 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46FAC94217EBA9FC000F4942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46FAC94317EBA9FC000F4942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46FAC94517EBA9FC000F4942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Distancia Mapkit/Distancia Mapkit-Prefix.pch";
+				INFOPLIST_FILE = "Distancia Mapkit/Distancia Mapkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46FAC94617EBA9FC000F4942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Distancia Mapkit/Distancia Mapkit-Prefix.pch";
+				INFOPLIST_FILE = "Distancia Mapkit/Distancia Mapkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46FAC91C17EBA9FC000F4942 /* Build configuration list for PBXProject "Distancia Mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FAC94217EBA9FC000F4942 /* Debug */,
+				46FAC94317EBA9FC000F4942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FAC94417EBA9FC000F4942 /* Build configuration list for PBXNativeTarget "Distancia Mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FAC94517EBA9FC000F4942 /* Debug */,
+				46FAC94617EBA9FC000F4942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46FAC91917EBA9FC000F4942 /* Project object */;
+}
