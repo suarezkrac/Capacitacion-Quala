@@ -23,6 +23,7 @@
     if( self = [super initWithCoder:aDecoder]){
         currentColor = [UIColor redColor];
         useRandomColor = NO;
+        self.drawImage = [UIImage imageNamed:@"iphone.png"];
     }
     return self;
 }
@@ -43,6 +44,19 @@
             CGContextAddRect(context, self.currentRect);
             CGContextDrawPath(context, kCGPathFillStroke);
             break;
+        case kEllipseShape:
+            CGContextAddEllipseInRect(context, self.currentRect);
+             CGContextDrawPath(context, kCGPathFillStroke);
+            break;
+        case kImageShape:{
+            CGFloat horizontalOffset = drawImage.size.width /2;
+            CGFloat verticalOffset = drawImage.size.height /2;
+            CGPoint drawPoint = CGPointMake(lastTouch.x - horizontalOffset, lastTouch.y - verticalOffset);
+            
+            [drawImage drawAtPoint:drawPoint];
+             break;
+            }
+           
             
         default:
             break;

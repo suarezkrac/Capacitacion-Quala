@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4615B08717F23FB3003667BD /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4615B08617F23FB3003667BD /* iphone.png */; };
 		4652BBFE17F0F10100B36768 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4652BBFD17F0F10100B36768 /* UIKit.framework */; };
 		4652BC0017F0F10100B36768 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4652BBFF17F0F10100B36768 /* Foundation.framework */; };
 		4652BC0217F0F10100B36768 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4652BC0117F0F10100B36768 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4615B08617F23FB3003667BD /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 		4652BBFA17F0F10100B36768 /* Quartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4652BBFD17F0F10100B36768 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4652BBFF17F0F10100B36768 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 		4652BBF117F0F10100B36768 = {
 			isa = PBXGroup;
 			children = (
+				4615B08617F23FB3003667BD /* iphone.png */,
 				4652BC3017F1001D00B36768 /* QuartzView.h */,
 				4652BC3117F1001D00B36768 /* QuartzView.m */,
 				4652BC2D17F0FEDE00B36768 /* UIColor+Random.h */,
@@ -174,6 +177,7 @@
 				4652BC1017F0F10100B36768 /* Default.png in Resources */,
 				4652BC1217F0F10100B36768 /* Default@2x.png in Resources */,
 				4652BC1417F0F10100B36768 /* Default-568h@2x.png in Resources */,
+				4615B08717F23FB3003667BD /* iphone.png in Resources */,
 				4652BC1717F0F10100B36768 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +316,7 @@
 				4652BC1F17F0F10100B36768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F9A8B43-876A-4E42-9841-56AF63DC86C1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Quartz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B86299A1-2D6F-44CB-9A3F-2309D4A8EEF8</key>
+		<string>https://github.com/suarezkrac/Capacitacion-Quala.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Quartz/Quartz.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B86299A1-2D6F-44CB-9A3F-2309D4A8EEF8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/suarezkrac/Capacitacion-Quala.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B86299A1-2D6F-44CB-9A3F-2309D4A8EEF8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B86299A1-2D6F-44CB-9A3F-2309D4A8EEF8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Capacitacion-Quala</string>
+		</dict>
+	</array>
+</dict>
+</plist>
