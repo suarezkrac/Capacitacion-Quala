@@ -7,24 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "HelloQuartzView.h"
+#import "Constants.h"
+#import "QuartzView.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+@synthesize colorControl;
 
--(void)loadView{
-    //CONEXION PARA EDIAR EL VIEW
-    self.view = [[HelloQuartzView alloc] initWithFrame: CGRectMake(0, 0, 500, 500)];
-    UIGestureRecognizer * recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(repaintView)];
-    [self.view addGestureRecognizer:recognizer];
-    
-}
--(void)repaintView{
-    [self.view setNeedsDisplay];
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,4 +30,40 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeColor:(id)sender {
+    UISegmentedControl * control = sender;
+    NSInteger index = [control selectedSegmentIndex];
+    QuartzView * quartzView = (QuartzView *)self.view;
+    
+    switch (index) {
+        case kRedColorTab:
+            quartzView.currentColor = [UIColor redColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kBlueColorTab:
+            quartzView.currentColor = [UIColor blueColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kYellowColorTab:
+            quartzView.currentColor = [UIColor yellowColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kGreenColorTab:
+            quartzView.currentColor = [UIColor greenColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kRandomColorTab:
+            quartzView.useRandomColor = YES;
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (IBAction)changeShape:(id)sender {
+    UISegmentedControl * control = sender;
+    NSLog(@"%ld", (long)[control selectedSegmentIndex]);
+    [(QuartzView *)self.view setShapeType:[control selectedSegmentIndex]];
+}
 @end

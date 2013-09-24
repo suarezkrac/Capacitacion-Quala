@@ -1,5 +1,5 @@
 //
-//  HelloQuartzView.h
+//  UIColor+Random.h
 //  Quartz
 //
 //  Created by Giovanny Suarez on 23/09/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloQuartzView : UIView
-
-
+@interface  UIColor (UIColor_Random)
++(UIColor *)randomColor;
 @end

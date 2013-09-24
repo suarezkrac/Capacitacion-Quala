@@ -8,8 +8,8 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                    <view key="view" contentMode="scaleToFill" id="3" customClass="QuartzView">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-VG-l3w">
@@ -25,6 +25,9 @@
                                                 <segment title="Circulo"/>
                                                 <segment title="Imagen"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="changeShape:" destination="2" eventType="valueChanged" id="quh-Qh-pBZ"/>
+                                            </connections>
                                         </segmentedControl>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CWj-6W-m6Y"/>
@@ -35,15 +38,18 @@
                                     <navigationItem id="7kq-QV-YV7">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ABo-UJ-TW6">
-                                            <rect key="frame" x="5" y="6" width="310" height="33"/>
+                                            <rect key="frame" x="5" y="4" width="310" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
-                                                <segment title="Azul"/>
                                                 <segment title="Rojo"/>
-                                                <segment title="Verde"/>
+                                                <segment title="Azul"/>
                                                 <segment title="Amarillo"/>
+                                                <segment title="Verde"/>
                                                 <segment title="Rand"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="changeColor:" destination="2" eventType="valueChanged" id="hHM-Vk-9wg"/>
+                                            </connections>
                                         </segmentedControl>
                                     </navigationItem>
                                 </items>
@@ -62,7 +68,10 @@
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="jeK-v6-mwi"/>
                     </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="colorControl" destination="ABo-UJ-TW6" id="gC4-eX-WOm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,13 +81,21 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+        <class className="QuartzView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuartzView.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeColor:"/>
+                <relationship kind="action" name="changeShape:"/>
+                <relationship kind="outlet" name="colorControl" candidateClass="UISegmentedControl"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

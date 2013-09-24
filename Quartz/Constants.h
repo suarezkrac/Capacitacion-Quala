@@ -24,6 +24,6 @@ typedef enum {
     kRandomColorTab
 }ColorTabIndex;
 
-
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
 
 #endif
