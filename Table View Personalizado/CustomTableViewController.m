@@ -34,8 +34,8 @@
     self.title = @"Mis Logros";
     self.cosasQueAprendi= [@[@"Mapkit", @"Core Graphics", @"Objective - C"] mutableCopy];
     self.cosasQueFaltanAprender = [@[@"SQL Lite", @"Device Access", @"Best Practices"] mutableCopy];
-    
-    
+    UIImageView * background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_bg.jpg"]];
+    self.tableView.backgroundView = background;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,24 +48,32 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    if (section == 0) {
+        return self.cosasQueAprendi.count;
+    }
+    else{
+        return self.cosasQueFaltanAprender.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSString * cellIddentifier = @"cell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIddentifier];
     
-    // Configure the cell...
+    NSString * entry;
+    if (indexPath.section == 0) {
+        entry = self.cosasQueAprendi[indexPath.row];
+    }else{
+        entry = self.cosasQueFaltanAprender[indexPath.row];
+    }
+    
+    cell.textLabel.text = entry;
     
     return cell;
 }
