@@ -69,7 +69,7 @@
     
     CGContextSetStrokeColorWithColor(context, self.darkColor.CGColor);
     CGContextSetLineWidth(context, 1.0);
-    CGContextStrokeRect(context, rectFor1PxStroke(self.coloredBoxRect));
+    CGContextStrokeRect(context, rectFor1pxStroke(self.coloredBoxRect));
 }
 
 @end
