@@ -18,7 +18,7 @@ void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startCol
 
 CGMutablePathRef createArcPathFormBottomOfRect(CGRect rect, CGFloat arcHeigth);
 
-double radians (double degress) { return  degress * M_PI/180;};
+static inline double radians (double degress) { return  degress * M_PI/180;};
 /*@interface Common : NSObject
 
 @end

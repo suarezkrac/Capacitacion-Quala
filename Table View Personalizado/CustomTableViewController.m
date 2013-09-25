@@ -7,6 +7,7 @@
 //
 
 #import "CustomTableViewController.h"
+#import "CustomHeader.h"
 
 @interface CustomTableViewController ()
 
@@ -76,6 +77,28 @@
     cell.textLabel.text = entry;
     
     return cell;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    CustomHeader * header = [[CustomHeader alloc] init];
+    
+    header.titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
+    if (section == 1) {
+        header.lightColor = [UIColor colorWithRed:0.234 green:0.500 blue:0.863 alpha:1.0];
+        header.darkColor = [UIColor colorWithRed:0.764 green:0.456 blue:0.666 alpha:1.0 ];
+    }
+    return header;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 50.0f;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (section==0) {
+        return @"Cosas q aprendi";
+    }else{
+        return @"Cosas q faltan";
+    }
 }
 
 /*
