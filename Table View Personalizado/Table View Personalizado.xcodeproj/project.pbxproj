@@ -22,6 +22,8 @@
 		4615B0BE17F24332003667BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4615B0BC17F24332003667BD /* InfoPlist.strings */; };
 		4615B0C017F24332003667BD /* Table_View_PersonalizadoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615B0BF17F24332003667BD /* Table_View_PersonalizadoTests.m */; };
 		4615B0CB17F243E7003667BD /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615B0CA17F243E7003667BD /* Common.m */; };
+		4615B0CE17F25D50003667BD /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615B0CD17F25D50003667BD /* CustomTableViewController.m */; };
+		4615B0D017F25EE8003667BD /* main_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4615B0CF17F25EE8003667BD /* main_bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		4615B0BF17F24332003667BD /* Table_View_PersonalizadoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table_View_PersonalizadoTests.m; sourceTree = "<group>"; };
 		4615B0C917F243E7003667BD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		4615B0CA17F243E7003667BD /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		4615B0CC17F25D50003667BD /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		4615B0CD17F25D50003667BD /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		4615B0CF17F25EE8003667BD /* main_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 		4615B08817F24332003667BD = {
 			isa = PBXGroup;
 			children = (
+				4615B0CF17F25EE8003667BD /* main_bg.jpg */,
+				4615B0CC17F25D50003667BD /* CustomTableViewController.h */,
+				4615B0CD17F25D50003667BD /* CustomTableViewController.m */,
 				4615B0C917F243E7003667BD /* Common.h */,
 				4615B0CA17F243E7003667BD /* Common.m */,
 				4615B09A17F24332003667BD /* Table View Personalizado */,
@@ -236,6 +244,7 @@
 				4615B0AD17F24332003667BD /* Images.xcassets in Resources */,
 				4615B09F17F24332003667BD /* InfoPlist.strings in Resources */,
 				4615B0A817F24332003667BD /* Main.storyboard in Resources */,
+				4615B0D017F25EE8003667BD /* main_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4615B0CB17F243E7003667BD /* Common.m in Sources */,
+				4615B0CE17F25D50003667BD /* CustomTableViewController.m in Sources */,
 				4615B0AB17F24332003667BD /* ViewController.m in Sources */,
 				4615B0A517F24332003667BD /* AppDelegate.m in Sources */,
 				4615B0A117F24332003667BD /* main.m in Sources */,
