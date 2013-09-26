@@ -37,6 +37,8 @@
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
+    [picker setCameraDevice:UIImagePickerControllerCameraDeviceFront];
+    
     [self presentViewController:picker animated:YES completion:NULL];
     
 }
@@ -55,7 +57,7 @@
     UIImage * chosenImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = chosenImage;
     
-    
+    UIImageWriteToSavedPhotosAlbum(chosenImage, Nil, nil, nil);
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }

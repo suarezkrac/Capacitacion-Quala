@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		467668D717F3AB9500A49CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668D617F3AB9500A49CF6 /* Foundation.framework */; };
+		467668D917F3AB9500A49CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668D817F3AB9500A49CF6 /* CoreGraphics.framework */; };
+		467668DB17F3AB9500A49CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668DA17F3AB9500A49CF6 /* UIKit.framework */; };
+		467668E117F3AB9500A49CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 467668DF17F3AB9500A49CF6 /* InfoPlist.strings */; };
+		467668E317F3AB9500A49CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 467668E217F3AB9500A49CF6 /* main.m */; };
+		467668E717F3AB9500A49CF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467668E617F3AB9500A49CF6 /* AppDelegate.m */; };
+		467668EA17F3AB9500A49CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467668E817F3AB9500A49CF6 /* Main.storyboard */; };
+		467668ED17F3AB9500A49CF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467668EC17F3AB9500A49CF6 /* ViewController.m */; };
+		467668EF17F3AB9500A49CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467668EE17F3AB9500A49CF6 /* Images.xcassets */; };
+		467668F617F3AB9500A49CF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668F517F3AB9500A49CF6 /* XCTest.framework */; };
+		467668F717F3AB9500A49CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668D617F3AB9500A49CF6 /* Foundation.framework */; };
+		467668F817F3AB9500A49CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467668DA17F3AB9500A49CF6 /* UIKit.framework */; };
+		4676690017F3AB9500A49CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 467668FE17F3AB9500A49CF6 /* InfoPlist.strings */; };
+		4676690217F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4676690117F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.m */; };
+		4676690C17F3ABA900A49CF6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4676690B17F3ABA900A49CF6 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		467668F917F3AB9500A49CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467668CB17F3AB9500A49CF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 467668D217F3AB9500A49CF6;
+			remoteInfo = Acelerometro_Giroscopio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		467668D317F3AB9500A49CF6 /* Acelerometro_Giroscopio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acelerometro_Giroscopio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		467668D617F3AB9500A49CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		467668D817F3AB9500A49CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		467668DA17F3AB9500A49CF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		467668DE17F3AB9500A49CF6 /* Acelerometro_Giroscopio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acelerometro_Giroscopio-Info.plist"; sourceTree = "<group>"; };
+		467668E017F3AB9500A49CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		467668E217F3AB9500A49CF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		467668E417F3AB9500A49CF6 /* Acelerometro_Giroscopio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acelerometro_Giroscopio-Prefix.pch"; sourceTree = "<group>"; };
+		467668E517F3AB9500A49CF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		467668E617F3AB9500A49CF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		467668E917F3AB9500A49CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		467668EB17F3AB9500A49CF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		467668EC17F3AB9500A49CF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		467668EE17F3AB9500A49CF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		467668F417F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Acelerometro_GiroscopioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		467668F517F3AB9500A49CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		467668FD17F3AB9500A49CF6 /* Acelerometro_GiroscopioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acelerometro_GiroscopioTests-Info.plist"; sourceTree = "<group>"; };
+		467668FF17F3AB9500A49CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4676690117F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acelerometro_GiroscopioTests.m; sourceTree = "<group>"; };
+		4676690B17F3ABA900A49CF6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		467668D017F3AB9500A49CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4676690C17F3ABA900A49CF6 /* CoreMotion.framework in Frameworks */,
+				467668D917F3AB9500A49CF6 /* CoreGraphics.framework in Frameworks */,
+				467668DB17F3AB9500A49CF6 /* UIKit.framework in Frameworks */,
+				467668D717F3AB9500A49CF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		467668F117F3AB9500A49CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467668F617F3AB9500A49CF6 /* XCTest.framework in Frameworks */,
+				467668F817F3AB9500A49CF6 /* UIKit.framework in Frameworks */,
+				467668F717F3AB9500A49CF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		467668CA17F3AB9500A49CF6 = {
+			isa = PBXGroup;
+			children = (
+				467668DC17F3AB9500A49CF6 /* Acelerometro_Giroscopio */,
+				467668FB17F3AB9500A49CF6 /* Acelerometro_GiroscopioTests */,
+				467668D517F3AB9500A49CF6 /* Frameworks */,
+				467668D417F3AB9500A49CF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		467668D417F3AB9500A49CF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				467668D317F3AB9500A49CF6 /* Acelerometro_Giroscopio.app */,
+				467668F417F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		467668D517F3AB9500A49CF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4676690B17F3ABA900A49CF6 /* CoreMotion.framework */,
+				467668D617F3AB9500A49CF6 /* Foundation.framework */,
+				467668D817F3AB9500A49CF6 /* CoreGraphics.framework */,
+				467668DA17F3AB9500A49CF6 /* UIKit.framework */,
+				467668F517F3AB9500A49CF6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		467668DC17F3AB9500A49CF6 /* Acelerometro_Giroscopio */ = {
+			isa = PBXGroup;
+			children = (
+				467668E517F3AB9500A49CF6 /* AppDelegate.h */,
+				467668E617F3AB9500A49CF6 /* AppDelegate.m */,
+				467668E817F3AB9500A49CF6 /* Main.storyboard */,
+				467668EB17F3AB9500A49CF6 /* ViewController.h */,
+				467668EC17F3AB9500A49CF6 /* ViewController.m */,
+				467668EE17F3AB9500A49CF6 /* Images.xcassets */,
+				467668DD17F3AB9500A49CF6 /* Supporting Files */,
+			);
+			path = Acelerometro_Giroscopio;
+			sourceTree = "<group>";
+		};
+		467668DD17F3AB9500A49CF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				467668DE17F3AB9500A49CF6 /* Acelerometro_Giroscopio-Info.plist */,
+				467668DF17F3AB9500A49CF6 /* InfoPlist.strings */,
+				467668E217F3AB9500A49CF6 /* main.m */,
+				467668E417F3AB9500A49CF6 /* Acelerometro_Giroscopio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		467668FB17F3AB9500A49CF6 /* Acelerometro_GiroscopioTests */ = {
+			isa = PBXGroup;
+			children = (
+				4676690117F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.m */,
+				467668FC17F3AB9500A49CF6 /* Supporting Files */,
+			);
+			path = Acelerometro_GiroscopioTests;
+			sourceTree = "<group>";
+		};
+		467668FC17F3AB9500A49CF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				467668FD17F3AB9500A49CF6 /* Acelerometro_GiroscopioTests-Info.plist */,
+				467668FE17F3AB9500A49CF6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		467668D217F3AB9500A49CF6 /* Acelerometro_Giroscopio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4676690517F3AB9500A49CF6 /* Build configuration list for PBXNativeTarget "Acelerometro_Giroscopio" */;
+			buildPhases = (
+				467668CF17F3AB9500A49CF6 /* Sources */,
+				467668D017F3AB9500A49CF6 /* Frameworks */,
+				467668D117F3AB9500A49CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Acelerometro_Giroscopio;
+			productName = Acelerometro_Giroscopio;
+			productReference = 467668D317F3AB9500A49CF6 /* Acelerometro_Giroscopio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		467668F317F3AB9500A49CF6 /* Acelerometro_GiroscopioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4676690817F3AB9500A49CF6 /* Build configuration list for PBXNativeTarget "Acelerometro_GiroscopioTests" */;
+			buildPhases = (
+				467668F017F3AB9500A49CF6 /* Sources */,
+				467668F117F3AB9500A49CF6 /* Frameworks */,
+				467668F217F3AB9500A49CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				467668FA17F3AB9500A49CF6 /* PBXTargetDependency */,
+			);
+			name = Acelerometro_GiroscopioTests;
+			productName = Acelerometro_GiroscopioTests;
+			productReference = 467668F417F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		467668CB17F3AB9500A49CF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Giovanny Suarez";
+				TargetAttributes = {
+					467668F317F3AB9500A49CF6 = {
+						TestTargetID = 467668D217F3AB9500A49CF6;
+					};
+				};
+			};
+			buildConfigurationList = 467668CE17F3AB9500A49CF6 /* Build configuration list for PBXProject "Acelerometro_Giroscopio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 467668CA17F3AB9500A49CF6;
+			productRefGroup = 467668D417F3AB9500A49CF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				467668D217F3AB9500A49CF6 /* Acelerometro_Giroscopio */,
+				467668F317F3AB9500A49CF6 /* Acelerometro_GiroscopioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		467668D117F3AB9500A49CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467668EF17F3AB9500A49CF6 /* Images.xcassets in Resources */,
+				467668E117F3AB9500A49CF6 /* InfoPlist.strings in Resources */,
+				467668EA17F3AB9500A49CF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		467668F217F3AB9500A49CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4676690017F3AB9500A49CF6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		467668CF17F3AB9500A49CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467668ED17F3AB9500A49CF6 /* ViewController.m in Sources */,
+				467668E717F3AB9500A49CF6 /* AppDelegate.m in Sources */,
+				467668E317F3AB9500A49CF6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		467668F017F3AB9500A49CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4676690217F3AB9500A49CF6 /* Acelerometro_GiroscopioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		467668FA17F3AB9500A49CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 467668D217F3AB9500A49CF6 /* Acelerometro_Giroscopio */;
+			targetProxy = 467668F917F3AB9500A49CF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		467668DF17F3AB9500A49CF6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				467668E017F3AB9500A49CF6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		467668E817F3AB9500A49CF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				467668E917F3AB9500A49CF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		467668FE17F3AB9500A49CF6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				467668FF17F3AB9500A49CF6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4676690317F3AB9500A49CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4676690417F3AB9500A49CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4676690617F3AB9500A49CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Prefix.pch";
+				INFOPLIST_FILE = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4676690717F3AB9500A49CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Prefix.pch";
+				INFOPLIST_FILE = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4676690917F3AB9500A49CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Acelerometro_Giroscopio.app/Acelerometro_Giroscopio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Acelerometro_GiroscopioTests/Acelerometro_GiroscopioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4676690A17F3AB9500A49CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Acelerometro_Giroscopio.app/Acelerometro_Giroscopio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acelerometro_Giroscopio/Acelerometro_Giroscopio-Prefix.pch";
+				INFOPLIST_FILE = "Acelerometro_GiroscopioTests/Acelerometro_GiroscopioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		467668CE17F3AB9500A49CF6 /* Build configuration list for PBXProject "Acelerometro_Giroscopio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4676690317F3AB9500A49CF6 /* Debug */,
+				4676690417F3AB9500A49CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4676690517F3AB9500A49CF6 /* Build configuration list for PBXNativeTarget "Acelerometro_Giroscopio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4676690617F3AB9500A49CF6 /* Debug */,
+				4676690717F3AB9500A49CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4676690817F3AB9500A49CF6 /* Build configuration list for PBXNativeTarget "Acelerometro_GiroscopioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4676690917F3AB9500A49CF6 /* Debug */,
+				4676690A17F3AB9500A49CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 467668CB17F3AB9500A49CF6 /* Project object */;
+}
