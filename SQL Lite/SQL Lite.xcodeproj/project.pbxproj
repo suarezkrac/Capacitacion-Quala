@@ -23,6 +23,9 @@
 		464B242317FA27F500EAE4DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 464B242217FA27F500EAE4DF /* libsqlite3.dylib */; };
 		464B242C17FA305F00EAE4DF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B242A17FA305F00EAE4DF /* MainViewController.m */; };
 		464B242D17FA305F00EAE4DF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B242B17FA305F00EAE4DF /* MainViewController.xib */; };
+		464B243117FA452700EAE4DF /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B242F17FA452700EAE4DF /* AddViewController.m */; };
+		464B243217FA452700EAE4DF /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B243017FA452700EAE4DF /* AddViewController.xib */; };
+		464B243517FA470200EAE4DF /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B243417FA470200EAE4DF /* Tutorial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +55,16 @@
 		464B241217FA276F00EAE4DF /* SQL LiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQL LiteTests-Info.plist"; sourceTree = "<group>"; };
 		464B241417FA276F00EAE4DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		464B241617FA276F00EAE4DF /* SQL_LiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQL_LiteTests.m; sourceTree = "<group>"; };
-		464B242017FA279700EAE4DF /* ApprendemosBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ApprendemosBD.sqlite; sourceTree = "<group>"; };
+		464B242017FA279700EAE4DF /* ApprendemosBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ApprendemosBD.sqlite; path = ../ApprendemosBD.sqlite; sourceTree = "<group>"; };
 		464B242217FA27F500EAE4DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		464B242917FA305F00EAE4DF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		464B242A17FA305F00EAE4DF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		464B242B17FA305F00EAE4DF /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		464B242E17FA452700EAE4DF /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		464B242F17FA452700EAE4DF /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		464B243017FA452700EAE4DF /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		464B243317FA470200EAE4DF /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		464B243417FA470200EAE4DF /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +95,14 @@
 		464B23E517FA276F00EAE4DF = {
 			isa = PBXGroup;
 			children = (
+				464B243317FA470200EAE4DF /* Tutorial.h */,
+				464B243417FA470200EAE4DF /* Tutorial.m */,
+				464B242E17FA452700EAE4DF /* AddViewController.h */,
+				464B242F17FA452700EAE4DF /* AddViewController.m */,
+				464B243017FA452700EAE4DF /* AddViewController.xib */,
 				464B242917FA305F00EAE4DF /* MainViewController.h */,
 				464B242A17FA305F00EAE4DF /* MainViewController.m */,
 				464B242B17FA305F00EAE4DF /* MainViewController.xib */,
-				464B242017FA279700EAE4DF /* ApprendemosBD.sqlite */,
 				464B23F717FA276F00EAE4DF /* SQL Lite */,
 				464B241017FA276F00EAE4DF /* SQL LiteTests */,
 				464B23F017FA276F00EAE4DF /* Frameworks */,
@@ -133,6 +145,7 @@
 		464B23F817FA276F00EAE4DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				464B242017FA279700EAE4DF /* ApprendemosBD.sqlite */,
 				464B23F917FA276F00EAE4DF /* SQL Lite-Info.plist */,
 				464B23FA17FA276F00EAE4DF /* InfoPlist.strings */,
 				464B23FD17FA276F00EAE4DF /* main.m */,
@@ -236,6 +249,7 @@
 			files = (
 				464B242117FA279700EAE4DF /* ApprendemosBD.sqlite in Resources */,
 				464B23FC17FA276F00EAE4DF /* InfoPlist.strings in Resources */,
+				464B243217FA452700EAE4DF /* AddViewController.xib in Resources */,
 				464B240417FA276F00EAE4DF /* Images.xcassets in Resources */,
 				464B242D17FA305F00EAE4DF /* MainViewController.xib in Resources */,
 			);
@@ -256,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464B243517FA470200EAE4DF /* Tutorial.m in Sources */,
 				464B240217FA276F00EAE4DF /* AppDelegate.m in Sources */,
 				464B242C17FA305F00EAE4DF /* MainViewController.m in Sources */,
+				464B243117FA452700EAE4DF /* AddViewController.m in Sources */,
 				464B23FE17FA276F00EAE4DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

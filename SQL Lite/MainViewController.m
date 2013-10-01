@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AddViewController.h"
 
 @interface MainViewController ()
 
@@ -27,6 +28,9 @@
 }
 
 - (IBAction)addRegister:(id)sender {
+    AddViewController *addViewController = [[AddViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:addViewController animated:YES];
+    
 }
 
 - (IBAction)listado:(id)sender {

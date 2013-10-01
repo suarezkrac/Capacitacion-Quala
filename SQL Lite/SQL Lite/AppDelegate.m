@@ -43,39 +43,26 @@
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
-    NSError * error;
+    NSError *error;
     
-     NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     
-    NSString * libraryDirectory  = [paths objectAtIndex:0];
+    NSString *libraryDirectory = [paths objectAtIndex:0];
     
-    NSString * writableDBPath = [libraryDirectory stringByAppendingPathComponent:@"ApprendemosBD.sqlite"];
+    NSString *writableDBPath = [libraryDirectory stringByAppendingPathComponent:@"ApprendemosBD.sqlite"];
     
     exito = [fileManager fileExistsAtPath:writableDBPath];
     
-   if (exito) {
-        NSLog(@"Carga Correcta");
-        return;
-    }
+    if(exito) return;
     
-    NSString * defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ApprendemosBD.sqlite"];
+    // Si no existe en library la copio desde el original.
+    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ApprendemosBD.sqlite"];
     
     exito = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
     
     if(!exito){
-        NSLog(@"Error al cargar la base de datos, %@", [error localizedDescription]);
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-}
+        NSAssert1(0, @"Error al cargar la base de datos, error = '%@'.", [error localizedDescription]);
+    }}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
